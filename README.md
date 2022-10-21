@@ -1,2 +1,3 @@
 # Leetcode_daily_challenges_october
-Leetcode_dailchallange_october
+21_october:contain duplicate_2
+
