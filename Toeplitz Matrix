@@ -1,0 +1,41 @@
+class Solution {
+    public boolean isToeplitzMatrix(int[][] arr) {
+     int n=arr.length;
+     int m=arr[0].length;
+   
+     for(int j=0;j<m;j++)
+     {
+      int k=0;
+      int x=j;
+     int temp=arr[k][x];
+     while(k< n && x<m)
+     {
+     if(arr[k][x]==temp)
+     {
+     k++;
+     x++;  
+     }
+    else 
+    return false;
+        
+     }
+     }
+    for(int i=1;i<n;i++)
+    {
+    int k=0;
+    int x=i;
+    int temp=arr[x][k];
+    while(x<n && k<m)
+    {
+    if(arr[x][k]==temp)
+    {
+    x++;
+    k++;
+    }
+    else
+    return false;
+    }
+    }
+        return true;
+}
+}
